@@ -112,3 +112,34 @@ main .ad_wrap #adswiper .swiper-wrapper .swiper-slide.slide5 {}
 .new_wrap .new_content .new_products .product_row .product_card .product_boxes .newbox {}
 .new_wrap .new_content .new_products .product_row .product_card .product_boxes .salebox {}
 /* 4. list */
+.list_wrap {}
+.list_wrap .list_menu {}
+.list_wrap .list_menu .button {}
+.list_wrap .more {}
+.list_wrap .more .more_btn {}
+.list_wrap .more .more_btn span {}
+.list_wrap .more .more_btn span img {}
+.list_wrap .swiper {}
+.list_wrap .swiper#listswiper {}
+.list_wrap .swiper#listswiper .swiper-wrapper {}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide.slide1 {}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide {}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card {}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card a {}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card a img {}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_title {}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_title .title {}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_title .cart {}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_title .cart img {}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_price {}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_price span {}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_price del {}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_boxes {}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_boxes .newbox {}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_boxes .salebox {}
+.list_wrap .swiper#listswiper .swiper-scrollbar {}
+/* 5. adbnr */
+.adbnr_wrap {}
+.adbnr_wrap p {}
+.adbnr_wrap a {}
+/* 6. collection */
