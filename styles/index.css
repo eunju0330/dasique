@@ -1,42 +1,89 @@
-#wrap {}
-#wrap header {}
-#wrap header .header_inner {}
-#wrap header .header_inner h1 {}
-#wrap header .header_inner nav .gnb {}
-#wrap header .header_inner nav .gnb li {}
-#wrap header .header_inner nav .gnb li a {}
-#wrap header .header_inner nav .gnb li a .lnb_bg {}
-#wrap header .header_inner nav .gnb li a .lnb_bg .lnb_depth {}
-#wrap header .header_inner nav .gnb li a .lnb_bg .lnb_depth li {}
-#wrap header .header_inner nav .gnb li a .lnb_bg .lnb_depth li a {}
-#wrap header .header_inner .header_right {}
-#wrap header .header_inner .header_right .login_wrap {}
-#wrap header .header_inner .header_right .login_wrap .login_txt {}
-#wrap header .header_inner .header_right .login_wrap .login_txt a {}
-#wrap header .header_inner .header_right .login_wrap .login_bubble {}
-#wrap header .header_inner .header_right .login_wrap .login_bubble img {}
-#wrap header .header_inner .header_right .login_wrap .login_bubble span {}
-#wrap header .header_inner .header_right .header_icon {}
-#wrap header .header_inner .header_right .header_icon a {}
-#wrap header .header_inner .header_right .header_icon a img {}
+#wrap {
+    min-width:1920px;
+    font-family:'pertendard', sans-serif;
+}
 /* 1. 메인 이미지 */
-main .ad_wrap {}
+#wrap main {
+}
+main .ad_wrap {
+    width:100%;
+    height:100vh;
+    position: relative;
+    overflow:hidden;
+}
 main .ad_wrap .swiper {}
-main .ad_wrap .swiper#adswiper {}
-main .ad_wrap .swiper#adswiper .swiper-wrapper {}
-main .ad_wrap .swiper#adswiper .swiper-wrapper .swiper-slide {}
-main .ad_wrap .swiper#adswiper .swiper-wrapper .swiper-slide.slide1 {}
-main .ad_wrap .swiper#adswiper .swiper-wrapper .swiper-slide.slide2 {}
-main .ad_wrap .swiper#adswiper .swiper-wrapper .swiper-slide.slide3 {}
-main .ad_wrap .swiper#adswiper .swiper-wrapper .swiper-slide.slide4 {}
-main .ad_wrap .swiper#adswiper .swiper-wrapper .swiper-slide.slide5 {}
+main .ad_wrap #adswiper {
+    position:relative;
+}
+main .ad_wrap #adswiper .swiper-wrapper {
+    position:relative;
+}
+main .ad_wrap #adswiper .swiper-wrapper .swiper-slide {
+    position:relative;
+    width:100%;
+    height:950px;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+main .ad_wrap #adswiper .swiper-wrapper .swiper-slide.slide1 {
+    background-image:url(../images/ad_main/adbnr_001.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+main .ad_wrap #adswiper .swiper-wrapper .swiper-slide.slide2 {}
+main .ad_wrap #adswiper .swiper-wrapper .swiper-slide.slide3 {}
+main .ad_wrap #adswiper .swiper-wrapper .swiper-slide.slide4 {}
+main .ad_wrap #adswiper .swiper-wrapper .swiper-slide.slide5 {}
 /* 2. 이벤트배너 */
-main .eventbnr .event {}
-main .eventbnr .event a {}
+.eventbnr {
+    height:75px;
+    width:100%;
+    background:#D69697;
+    padding:0 230px;
+    display:flex;
+    align-items:center;
+}
+.eventbnr .event {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+.eventbnr .event a.item {
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.125rem;
+}
+.eventbnr .event .divider {
+    width:1px;
+    height:100%;
+    background-color: #fff;
+}
 /* 3. new */
-.new_wrap {}
-.new_wrap h1 {}
-.new_wrap .new_content {}
+.new_wrap {
+    width:100%;
+    height:1248px;
+    background-color:khaki;
+}
+.new_wrap h1 {
+    font-family: "Noto Serif", serif;
+    font-weight:600;
+    font-size:2.188rem;
+    text-align:center;
+    margin-bottom:79px;
+}
+.new_wrap .new_content {
+    display:flex;
+    gap:56px;
+    justify-content:center;
+    align-items:center;
+}
 .new_wrap .new_content .swiper {}
 .new_wrap .new_content .swiper#newswiper {}
 .new_wrap .new_content .swiper#newswiper .swiper-wrapper {}
@@ -48,7 +95,10 @@ main .eventbnr .event a {}
 .new_wrap .new_content .swiper#newswiper .prev {}
 .new_wrap .new_content .swiper#newswiper .next {}
 .new_wrap .new_content .new_products {}
-.new_wrap .new_content .new_products .product_row {}
+.new_wrap .new_content .new_products .product_row {
+    display:flex;
+    gap:76px;
+}
 .new_wrap .new_content .new_products .product_row .product_card {}
 .new_wrap .new_content .new_products .product_row .product_card a {}
 .new_wrap .new_content .new_products .product_row .product_card a .product_title {}

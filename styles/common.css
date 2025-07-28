@@ -1,0 +1,79 @@
+#wrap header {
+    position:absolute;
+    top:0; left:0;
+    width:100%; z-index:20;
+    background:transparent;
+}
+#wrap header .header_inner {
+    display:flex;
+    background-color:paleturquoise;
+    padding:0 70px 0 60px;
+    justify-content:space-between;
+}
+#wrap header .header_inner .gnb_wrap {
+    display:flex;
+}
+#wrap header .header_inner h1 {
+    margin-right:55px;
+    margin-top:49px;
+}
+#wrap header .header_inner nav {
+    background-color:red;
+}
+#wrap header .header_inner nav .gnb {
+    display:flex;
+    gap:35px; 
+    font-size:0.875rem;
+    margin-top:56px;
+}
+#wrap header .header_inner nav .gnb > li {
+    display:flex; flex-flow:column nowrap;
+
+}
+#wrap header .header_inner nav .gnb > li > a {
+    margin-bottom:19px;
+}
+#wrap header .header_inner nav .gnb .lnb_bg {
+    width:100%;
+    visibility: hidden;
+}
+#wrap header .header_inner nav .gnb .lnb_bg .lnb_depth {
+    display:flex; flex-flow:column nowrap;
+    gap:13px;
+}
+#wrap header .header_inner nav .gnb > .lnb_bg .lnb_depth > li {
+}
+#wrap header .header_inner nav .gnb > .lnb_bg .lnb_depth > li > a {
+    
+}
+#wrap header .header_inner .header_right {
+    background-color: aqua;
+    display:flex;
+    gap:27px;
+    margin-top:36px;
+    height:100%;
+}
+#wrap header .header_inner .header_right .login_wrap {
+    font-size:0.875rem;
+}
+#wrap header .header_inner .header_right .login_wrap .login_txt {}
+#wrap header .header_inner .header_right .login_wrap .login_txt a {
+    
+}
+#wrap header .header_inner .header_right .login_wrap .login_bubble {
+    position:relative;
+    margin-top:4px;
+}
+#wrap header .header_inner .header_right .login_wrap .login_bubble img {
+}
+#wrap header .header_inner .header_right .login_wrap .login_bubble span {
+    position:absolute;
+    left:27px;
+    top:10px;
+}
+#wrap header .header_inner .header_right .header_icon {
+    display:flex;
+    gap:16px;
+}
+#wrap header .header_inner .header_right .header_icon a {}
+#wrap header .header_inner .header_right .header_icon a img {}

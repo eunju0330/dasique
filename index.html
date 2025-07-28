@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>데이지크</title>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
@@ -16,42 +18,44 @@
         <!-- header -->
         <header>
             <div class="header_inner">
-                <h1><a href="#"><img src="./images/header/logo.png" alt="데이지크"></a></h1>
-                <nav>
-                    <ul class="gnb">
-                        <li><a href="#">ABOUT US</a>
-                            <div class="lnb_bg">
-                                <ul class="lnb_depth">
-                                    <li><a href="#">BRAND STORY</a></li>
-                                    <li><a href="#">LOCATION</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#">SHOP ALL</a>
-                            <div class="lnb_bg">
-                                <ul class="lnb_depth">
-                                    <li><a href="#">ALL</a></li>
-                                    <li><a href="#">EYE</a></li>
-                                    <li><a href="#">LIP</a></li>
-                                    <li><a href="#">BRUSH</a></li>
-                                    <li><a href="#">BASE</a></li>
-                                    <li><a href="#">TOOL</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#">COLLECTION</a></li>
-                        <li><a href="#">EVENT</a></li>
-                        <li><a href="#">REVIEW</a></li>
-                        <li><a href="#">COMMUNITY</a>
-                            <div class="lnb_bg">
-                                <ul class="lnb_depth">
-                                    <li><a href="#">NOTICE</a></li>
-                                    <li><a href="#">Q&A</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="gnb_wrap">
+                    <h1><a href="#"><img src="./images/header/logo.png" alt="데이지크"></a></h1>
+                    <nav>
+                        <ul class="gnb">
+                            <li><a href="#">ABOUT US</a>
+                                <div class="lnb_bg">
+                                    <ul class="lnb_depth">
+                                        <li><a href="#">BRAND STORY</a></li>
+                                        <li><a href="#">LOCATION</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">SHOP ALL</a>
+                                <div class="lnb_bg">
+                                    <ul class="lnb_depth">
+                                        <li><a href="#">ALL</a></li>
+                                        <li><a href="#">EYE</a></li>
+                                        <li><a href="#">LIP</a></li>
+                                        <li><a href="#">BRUSH</a></li>
+                                        <li><a href="#">BASE</a></li>
+                                        <li><a href="#">TOOL</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">COLLECTION</a></li>
+                            <li><a href="#">EVENT</a></li>
+                            <li><a href="#">REVIEW</a></li>
+                            <li><a href="#">COMMUNITY</a>
+                                <div class="lnb_bg">
+                                    <ul class="lnb_depth">
+                                        <li><a href="#">NOTICE</a></li>
+                                        <li><a href="#">Q&A</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="header_right">
                     <div class="login_wrap">
                         <div class="login_txt">
@@ -81,16 +85,17 @@
                         <div class="swiper-slide slide3"></div>
                         <div class="swiper-slide slide4"></div>
                         <div class="swiper-slide slide5"></div>
-                        </div>
                     </div>
                 </div>
             </section>
             <!-- 2. 이벤트배너 -->
             <section class="eventbnr">
                 <div class="event">
-                    <a href="#">6월 구매금액별 이벤트</a>
-                    <a href="#">토스페이로 결제시 추가 할인 혜택</a>
-                    <a href="#">페이코로 결제시 추가 할인 혜택</a>
+                    <a href="#" class="item">6월 구매금액별 이벤트</a>
+                    <div class="divider"></div>
+                    <a href="#" class="item">토스페이로 결제시 추가 할인 혜택</a>
+                    <div class="divider"></div>
+                    <a href="#" class="item">페이코로 결제시 추가 할인 혜택</a>
                 </div>
             </section>
             <!-- 3. new -->
@@ -124,12 +129,16 @@
                 <!-- 오른쪽 신상품들 -->
                     <div class="new_products">
                         <!-- 1행 -->
-                        <div class="product_row">
-                            <div class="product_card">
-                                <a href="#"><img src="./images/new/product001.jpg" alt="쥬이 듀이 글로우 틴트 14종"></a>
+                        <ul class="product_row">
+                            <li class="product_card">
+                                <a href="#">
+                                    <img src="./images/new/product001.jpg" alt="쥬이 듀이 글로우 틴트 14종">
+                                </a>
                                 <div class="product_title">
                                     <a href="#" class="title">쥬이 듀이 글로우 틴트 14종</a>
-                                    <a href="#" class="cart"><img src="./images/new/cart.png" alt="장바구니 담기"></a>
+                                    <a href="#" class="cart">
+                                        <img src="./images/new/cart.png" alt="장바구니 담기">
+                                    </a>
                                 </div>
                                 <p class="product_price">
                                     <span class="current_price">11,900원</span>
@@ -139,12 +148,16 @@
                                     <span class="newbox">NEW</span>
                                     <span class="salebox">30% SALE</span>
                                 </div>
-                            </div>
-                            <div class="product_card">
-                                <a href="#"><img src="./images/new/product002.jpg" alt="쥬이 듀이 글로우 틴트 14종"></a>
+                            </li>
+                            <li class="product_card">
+                                <a href="#">
+                                    <img src="./images/new/product001.jpg" alt="쥬이 듀이 글로우 틴트 14종">
+                                </a>
                                 <div class="product_title">
                                     <a href="#" class="title">쥬이 듀이 글로우 틴트 14종</a>
-                                    <a href="#" class="cart"><img src="./images/new/cart.png" alt="장바구니 담기"></a>
+                                    <a href="#" class="cart">
+                                        <img src="./images/new/cart.png" alt="장바구니 담기">
+                                    </a>
                                 </div>
                                 <p class="product_price">
                                     <span class="current_price">11,900원</span>
@@ -154,15 +167,19 @@
                                     <span class="newbox">NEW</span>
                                     <span class="salebox">30% SALE</span>
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                         <!-- 2행 -->
-                        <div class="product_row">
-                            <div class="product_card">
-                                <a href="#"><img src="./images/new/product003.jpg" alt="쥬이 듀이 글로우 틴트 14종"></a>
+                        <ul class="product_row">
+                            <li class="product_card">
+                                <a href="#">
+                                    <img src="./images/new/product001.jpg" alt="쥬이 듀이 글로우 틴트 14종">
+                                </a>
                                 <div class="product_title">
                                     <a href="#" class="title">쥬이 듀이 글로우 틴트 14종</a>
-                                    <a href="#" class="cart"><img src="./images/new/cart.png" alt="장바구니 담기"></a>
+                                    <a href="#" class="cart">
+                                        <img src="./images/new/cart.png" alt="장바구니 담기">
+                                    </a>
                                 </div>
                                 <p class="product_price">
                                     <span class="current_price">11,900원</span>
@@ -172,12 +189,16 @@
                                     <span class="newbox">NEW</span>
                                     <span class="salebox">30% SALE</span>
                                 </div>
-                            </div>
-                            <div class="product_card">
-                                <a href="#"><img src="./images/new/product004.jpg" alt="쥬이 듀이 글로우 틴트 14종"></a>
+                            </li>
+                            <li class="product_card">
+                                <a href="#">
+                                    <img src="./images/new/product001.jpg" alt="쥬이 듀이 글로우 틴트 14종">
+                                </a>
                                 <div class="product_title">
                                     <a href="#" class="title">쥬이 듀이 글로우 틴트 14종</a>
-                                    <a href="#" class="cart_icon"><img src="./images/new/cart.png" alt="장바구니 담기"></a>
+                                    <a href="#" class="cart">
+                                        <img src="./images/new/cart.png" alt="장바구니 담기">
+                                    </a>
                                 </div>
                                 <p class="product_price">
                                     <span class="current_price">11,900원</span>
@@ -187,8 +208,8 @@
                                     <span class="newbox">NEW</span>
                                     <span class="salebox">30% SALE</span>
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -684,7 +705,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="tab_content">
                         <h2>데이지크 롯데월드몰점</h2>
                         <p>데이지크 롯데월드몰점은 데이지크의 베스트셀러부터 최신 컬렉션까지 한눈에 만나볼 수 있는 공식 매장으로,<br>몰 내 다양한 고객층을 위한 맞춤형 공간 구성과 함께 브랜드의 세련된 무드를 직접 체험할 수 있는 공간입니다.</p>
