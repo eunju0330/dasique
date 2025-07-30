@@ -6,7 +6,6 @@
 }
 #wrap header .header_inner {
     display:flex;
-    background-color:paleturquoise;
     padding:0 70px 0 60px;
     justify-content:space-between;
 }
@@ -15,42 +14,64 @@
 }
 #wrap header .header_inner h1 {
     margin-right:55px;
-    margin-top:49px;
+    margin-top:31px;
 }
 #wrap header .header_inner nav {
-    background-color:red;
 }
 #wrap header .header_inner nav .gnb {
     display:flex;
-    gap:35px; 
+    gap:35px;
     font-size:0.875rem;
-    margin-top:56px;
+    margin-top:43px;
 }
 #wrap header .header_inner nav .gnb > li {
     display:flex; flex-flow:column nowrap;
-
+    position:relative;
 }
 #wrap header .header_inner nav .gnb > li > a {
     margin-bottom:19px;
+    position:relative;
+    display:inline-block;
 }
 #wrap header .header_inner nav .gnb .lnb_bg {
+    width:auto;
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:max-content;
+}
+#wrap header .header_inner nav .gnb > li > a::after {
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0;
+    height:1px;
+    background:currentColor;
+    transition:width 0.3s ease;
+}
+#wrap header .header_inner nav .gnb > li > a:hover::after {
     width:100%;
-    visibility: hidden;
+}
+#wrap header .header_inner nav .gnb > li:hover .lnb_bg {
+    display:block;
 }
 #wrap header .header_inner nav .gnb .lnb_bg .lnb_depth {
-    display:flex; flex-flow:column nowrap;
+    display:flex; 
+    flex-flow:column nowrap;
     gap:13px;
 }
 #wrap header .header_inner nav .gnb > .lnb_bg .lnb_depth > li {
 }
 #wrap header .header_inner nav .gnb > .lnb_bg .lnb_depth > li > a {
-    
+    position:relative;
+    display:inline-block;
 }
 #wrap header .header_inner .header_right {
-    background-color: aqua;
     display:flex;
     gap:27px;
-    margin-top:36px;
+    margin-top:31px;
     height:100%;
 }
 #wrap header .header_inner .header_right .login_wrap {

@@ -171,11 +171,13 @@ main .ad_wrap #adswiper .swiper-wrapper .swiper-slide.slide5 {}
     width:100%;
     height:861px;
     background-color:firebrick;
-    align-items:center;
+    align-items:start;
     margin-left:126px;
+    padding:161px 0;
 }
 .list_wrap .left_menu {
     margin-right:230px;
+    background-color:aliceblue;
 }
 .list_wrap .list_menu {
     display:flex;
@@ -207,9 +209,7 @@ main .ad_wrap #adswiper .swiper-wrapper .swiper-slide.slide5 {}
 .list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide {
     display:flex;
     gap:48px;
-}
-.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide.slide1 {
-    
+    margin-bottom:67px;
 }
 .list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide {}
 .list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card {
@@ -236,9 +236,208 @@ main .ad_wrap #adswiper .swiper-wrapper .swiper-slide.slide5 {}
 .list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_boxes {}
 .list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_boxes .newbox {}
 .list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_boxes .salebox {}
-.list_wrap .swiper#listswiper .swiper-scrollbar {}
+.list_wrap .swiper#listswiper .swiper-scrollbar {
+    width:100%;
+    height:1px;
+    background-color:#d9d9d9;
+    position:relative;
+}
+.list_wrap .swiper#listswiper .swiper-scrollbar::after {
+    height:1px;
+    position:absolute;
+    background-color:#000;
+}
 /* 5. adbnr */
-.adbnr_wrap {}
-.adbnr_wrap p {}
-.adbnr_wrap a {}
+.adbnr_wrap {
+    background-image:url(../images/adbnr_bg/adbnr.jpg);
+    width:100%;
+    height:350px;
+    position:relative;
+}
+.adbnr_wrap .ad_text {
+    position:absolute;
+    left:810.5px;
+    bottom:63px;
+    text-align:center;
+}
+.adbnr_wrap p {
+    margin-bottom:21px;
+    line-height:1.5;
+    font-weight:300;
+}
+.adbnr_wrap a {
+    border-bottom:1px solid #000;
+    font-weight:300;
+}
+.adbnr_wrap a:hover {
+    color:#888;
+    border-bottom:1px solid #888;
+}
 /* 6. collection */
+.collection_wrap {
+    width:100%;
+    height:1150px;
+    overflow:hidden;
+    text-align:center;
+    position:relative;
+}
+.collection_wrap #collectionSwiper {}
+.collection_wrap #collectionSwiper h1 {
+    font-size:2.188rem;
+    font-weight:600;
+    font-family: "Noto Serif", serif;
+    margin-bottom:79px;
+    margin-top:151px;
+}
+.collection_wrap #collectionSwiper .swiper-wrapper {}
+.collection_wrap #collectionSwiper .swiper-wrapper .swiper-slide {
+    display:flex;
+    justify-content: center;
+    gap:32px;
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .swiper-slide.slide1 {}
+.collection_wrap #collectionSwiper .swiper-wrapper .swiper-slide.slide2 {}
+.collection_wrap #collectionSwiper .swiper-wrapper .collect_card {
+    width:336px;
+    height:872px;
+    position:relative;
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .jan {
+    background-image:url(../images/collection/jan.png);
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .feb {
+    background-image:url(../images/collection/feb.png);
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .mar {
+    background-image:url(../images/collection/mar.png);
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .apr {
+    background-image:url(../images/collection/apr.png);
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .jun {
+    background-image:url(../images/collection/jan.jpg);
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .jul {
+    background-image:url(../images/collection/fab.jpg);
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .aug {
+    background-image:url(../images/collection/mar.jpg);
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .sep {
+    background-image:url(../images/collection/apr.jpg);
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .collect_card h2 {
+    position:absolute;
+    left:21px;
+    top:443px;
+    font-family: "Noto Serif", serif;
+    font-weight:500;
+    font-size:1.563rem;
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .collect_card .product_wrap {
+    display:flex;
+    flex-flow:column nowrap;
+    bottom:69px;
+    left:23px;
+    position:absolute;
+    gap:18px;
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .collect_card .product_wrap .product {
+    display:flex;
+    align-items:center;
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .collect_card .product_wrap .product > img {
+    border-radius:13px;
+    margin-right:13px;
+    padding:5px;
+    background-color:#fff;
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .collect_card .product_wrap .product .product_desc {
+    display:flex;
+    align-items:end;
+    justify-content:space-between;
+    gap:13px;
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .collect_card .product_wrap .product .product_info {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:start;
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .collect_card .product_wrap .product .title {
+    margin-bottom:10px;
+    font-size:0.813rem;
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .collect_card .product_wrap .product .product_price {}
+.collection_wrap #collectionSwiper .swiper-wrapper .collect_card .product_wrap .product .product_price .current_price {
+    font-size:0.875rem;
+    font-weight:600;
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .collect_card .product_wrap .product .product_price .original_price {
+    font-weight:300;
+    font-size:0.75rem;
+    color:rgba(64, 22, 0, 45)
+}
+.collection_wrap #collectionSwiper .swiper-wrapper .collect_card .product_wrap .product_desc a img a {}
+.collection_wrap #collectionSwiper .swiper-wrapper .collect_card .product_wrap .product_desc a img {
+}
+#collectionSwiper .swiper-button-prev,
+#collectionSwiper .swiper-button-next {
+    position:absolute;  
+    top:50%;
+    transform:translateY(-50%);
+    z-index:10;
+}
+#collectionSwiper .swiper-button-prev {
+    left:152px;
+}
+#collectionSwiper .swiper-button-next {
+    right:152px;
+}
+#collectionSwiper .swiper-button-prev img,
+#collectionSwiper .swiper-button-next img {
+    display:block;
+    width:40px;
+    height:40px;
+}
+/* 7. shorts */
+.shorts_wrap {
+    text-align:center;
+    width:100%;
+    height:1100px;
+    background-color:darkcyan;
+    overflow:hi;
+}
+.shorts_wrap h1 {
+    font-size:2.188rem;
+    font-weight:600;
+    font-family: "Noto Serif", serif;
+    margin-bottom:79px;
+    padding-top:130px;
+}
+.shorts_wrap #shorts_swiper {}
+.shorts_wrap #shorts_swiper .swiper-wrapper {
+}
+.shorts_wrap #shorts_swiper .swiper-wrapper .swiper-slide {
+    display:flex;
+    overflow:hidden;
+    gap:35px;
+}
+.shorts_wrap #shorts_swiper .swiper-wrapper .swiper-slide .shorts_card {
+    position:relative;
+}
+.shorts_wrap #shorts_swiper .swiper-wrapper .swiper-slide .shorts_card img {
+}
+.shorts_wrap #shorts_swiper .swiper-wrapper .swiper-slide .shorts_card a .shorts_play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    z-index: 10;
+}
+.shorts_wrap #shorts_swiper .swiper-wrapper .swiper-slide .shorts_card a .shorts_play img {
+    width: 40px;
+    height: 40px;
+}
+.shorts_wrap #shorts_swiper .swiper-scrollbar {}
+/* 8. store */
