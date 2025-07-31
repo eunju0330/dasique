@@ -99,3 +99,16 @@
 #wrap header .header_inner .header_right .header_icon a {}
 #wrap header .header_inner .header_right .header_icon a img {}
 /* footer */
+footer {}
+.footer_top {}
+.footer_top .contact {}
+.footer_top .contact ul {}
+.footer_top .contact li  {}
+.footer_top .contact li li {}
+.footer_top .contact li li h2 {}
+.footer_top .contact li li h2 img {}
+.footer_top .contact li span {}
+.footer_top .contact .company {}
+.footer_top .contact .company ul {}
+.footer_top .contact .company ul li {}
+.footer_top .contact .company ul li span {}
