@@ -152,6 +152,7 @@ main .ad_wrap #adswiper .swiper-wrapper .swiper-slide.slide5 {}
 .new_wrap .new_content .new_products .product_row .product_card .product_price .original_price {
     font-size:0.938rem;
     font-weight:300;
+    color:#888;
 }
 .new_wrap .new_content .new_products .product_row .product_card .product_boxes {
     margin-top:12px;
@@ -167,6 +168,8 @@ main .ad_wrap #adswiper .swiper-wrapper .swiper-slide.slide5 {}
     justify-content:center;
     padding:0 5px;
     height:22px;
+    font-weight:500;
+    font-size:0.625rem;
 }
 .new_wrap .new_content .new_products .product_row .product_card .product_boxes .newbox {
     border:1px solid #000;
@@ -206,7 +209,7 @@ main .ad_wrap #adswiper .swiper-wrapper .swiper-slide.slide5 {}
 }
 .list_wrap .list_menu button::after {
     content:"";
-    background-color:#FF9494;
+    background-color:rgba(255, 148, 148, 0.3);
     width:0px;
     height:15px;
     position:absolute;
@@ -267,8 +270,16 @@ main .ad_wrap #adswiper .swiper-wrapper .swiper-slide.slide5 {}
 .list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_price {
     margin-bottom:15px;
 }
-.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_price span {}
-.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_price del {}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_price span {
+    font-size:1.188rem;
+    font-weight:600;
+    margin-right:12px;
+}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_price del {
+    color:#888;
+    font-size:0.938rem;
+    font-weight:300;
+}
 .list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_boxes {
     margin-top:12px;
     font-size:0.625rem;
