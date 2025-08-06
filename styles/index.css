@@ -134,6 +134,8 @@ main .ad_wrap #adswiper .swiper-wrapper .swiper-slide.slide5 {}
     justify-content:space-between;
     margin-bottom:5px;
     align-items:center;
+    font-weight:400;
+    font-size:0.938rem;
 }
 .new_wrap .new_content .new_products .product_row .product_card .product_title .title {
     font-size:0.938rem;
@@ -158,19 +160,21 @@ main .ad_wrap #adswiper .swiper-wrapper .swiper-slide.slide5 {}
     display:flex;
     gap:9px;
 }
+.new_wrap .new_content .new_products .product_row .product_card .product_boxes .newbox,
+.new_wrap .new_content .new_products .product_row .product_card .product_boxes .salebox {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:0 5px;
+    height:22px;
+}
 .new_wrap .new_content .new_products .product_row .product_card .product_boxes .newbox {
     border:1px solid #000;
     background-color:#fff;
-    width:33px;
-    height:22px;
-    padding:5px;
 }
 .new_wrap .new_content .new_products .product_row .product_card .product_boxes .salebox {
     color:#fff;
     background-color:#401600;
-    padding:5px;
-    width:58px;
-    height:22px;
 }
 /* 4. list */
 .list_wrap {
@@ -265,9 +269,33 @@ main .ad_wrap #adswiper .swiper-wrapper .swiper-slide.slide5 {}
 }
 .list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_price span {}
 .list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_price del {}
-.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_boxes {}
-.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_boxes .newbox {}
-.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_boxes .salebox {}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_boxes {
+    margin-top:12px;
+    font-size:0.625rem;
+    font-weight:500;
+    display:flex;
+    gap:9px;
+}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_boxes .newbox,
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_boxes .salebox {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_boxes .newbox {
+    border:1px solid #000;
+    background-color:#fff;
+    width:33px;
+    height:22px;
+    padding:0 5px;
+}
+.list_wrap .swiper#listswiper .swiper-wrapper .swiper-slide .list_card .product_boxes .salebox {
+    color:#fff;
+    background-color:#401600;
+    padding:0 5px;
+    width:58px;
+    height:22px;
+}
 .list_wrap .swiper#listswiper .swiper-scrollbar {
     position:absolute;
     bottom:0;
