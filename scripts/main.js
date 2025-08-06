@@ -1,9 +1,25 @@
+/* new */
+const newSwiper = new Swiper('#newswiper',{
+    direction:'horizontal',
+    slidesPerView:1,
+    loop:true,
+    navigation:{
+        nextEl:'.next',
+        prevEl:'.prev',
+    },
+    autoplay: {
+        delay:2000,
+        disableOnInteraction:false,
+    },
+})
+
 /* list */
 const productSwiper = new Swiper ('#listswiper', {
     direction:'horizontal',
     slidesPerView:4,
     spaceBetween:48,
     slidesPerGroup:1,
+    slidesOffsetAfter:20,  
     scrollbar:{
         el:'.swiper-scrollbar',
         draggable:true,
